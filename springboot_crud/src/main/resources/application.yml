@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  thymeleaf:
+    cache: false
+  messages:
+    basename: i18n.login
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///emp?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+# mybatis showsql
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
