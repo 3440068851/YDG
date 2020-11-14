@@ -16,7 +16,7 @@ public class Employee {
     private Integer gender;
     private Department department;
 
-    @com.fasterxml.jackson.annotation.JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
+    //@com.fasterxml.jackson.annotation.JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
     private Date birth;
     private Integer d_id;
 
